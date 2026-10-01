@@ -1,0 +1,117 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NZ+Guides&display=swap');
+
+/* Reset */
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:linear-gradient(180deg,#071013,#0b1112);color:#fff;font-family:Inter,system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial}
+
+nav{font-family:"Ubuntu",sans-serif}
+nav ul{display:flex;list-style:none;background-color:#000;padding:20px;color:#fff;height:auto;align-items:center;gap:12px}
+.brand img{width:167px;height:65px;margin-right:20px}
+.brand img{height:56px;width:auto;margin-right:20px;display:block;object-fit:contain}
+.Brand{display:flex;justify-content:center;align-items:center}
+nav ul li{margin-right:30px;cursor:pointer;font-size:18px;font-weight:700;align-items:center;text-transform:uppercase}
+
+/* Make navigation links look like normal nav items (no blue/underline) */
+nav a,.navlink a{color:#fff;text-decoration:none;display:inline-block}
+nav a:visited{color:#fff}
+nav a:hover{opacity:.9}
+.navlink{display:flex;align-items:center;margin-left:auto;gap:24px}
+
+/* Player bottom bar */
+.bottom{position:fixed;bottom:0;width:100%;background-color:#000;height:80px;display:flex;justify-content:center;align-items:center;flex-direction:column;padding:8px}
+#myprogress{width:calc(100% - 40px);margin-top:8px}
+.icon i{color:#fff;font-size:30px;margin:8px 10px;cursor:pointer}
+
+/* Main container */
+.container{background-color:#000;max-width:800px;width:90%;margin:30px auto;padding:20px;border-radius:20px;background-image:url('https://wallpapercave.com/wp/wp10963136.jpg');background-size:cover}
+.songlist{font-size:.9rem;width:100%;border-radius:12px}
+.songItem{margin-bottom:12px;height:52px;width:100%;background:rgba(0,0,0,0.45);color:#fff;display:flex;align-items:center;margin-top:10px;justify-content:space-between;padding:6px 10px;border-radius:12px}
+.icon2 i{color:#fff;font-size:18px;margin:0 10px;cursor:pointer}
+.songItem span{padding-left:10px;font-size:14px}
+.songItem img{width:46px;height:46px;border-radius:8px;object-fit:cover}
+.timestamp{font-size:12px;color:#cfcfcf;padding-left:12px}
+h1{color:#04a033;text-align:center;padding-bottom:10px;font-family:roboto,sans-serif;font-size:22px}
+
+@keyframes play{0%{transform:scaleY(.5)}50%{transform:scaleY(1)}100%{transform:scaleY(.5)}}
+s{content:'';display:inline-block;width:3px;height:20px;background:#fff;margin:0 2px;animation:play .6s infinite}
+
+/* Playlist list */
+.playlist-list{list-style:none;padding:0;margin:18px 0;display:flex;flex-direction:column;gap:12px}
+.playlist-list li{display:flex;align-items:center;justify-content:space-between;padding:10px;border-radius:8px;background:rgba(0,0,0,0.35);color:#fff}
+
+/* Login styles and card */
+.login-page{display:flex;justify-content:center;align-items:center;padding:40px 20px;min-height:calc(100vh - 120px)}
+.login-card{width:100%;max-width:440px;background:linear-gradient(180deg,rgba(0,0,0,.55),rgba(0,0,0,.6));border-radius:14px;padding:22px;box-shadow:0 12px 40px rgba(0,0,0,.6);animation:cardIn .36s ease both}
+.login-header{text-align:center;margin-bottom:6px}
+.login-logo{width:72px;height:72px;border-radius:12px;display:inline-block;margin-bottom:8px}
+.login-logo{width:72px;height:72px;border-radius:12px;display:inline-block;margin-bottom:8px;object-fit:cover}
+.songItem img{width:46px;height:46px;border-radius:8px;object-fit:cover;margin-right:10px;padding-left:0}
+.container{background-color:#000;max-width:800px;width:90%;margin:30px auto;padding:20px;border-radius:20px;background-image:url('https://wallpapercave.com/wp/wp10963136.jpg');background-size:cover;background-position:center}
+.login-header h2{color:#fff;margin-bottom:6px}
+.login-header .muted{color:#cfd8dc;font-size:14px;margin:0}
+.small{color:#cfcfcf;font-size:13px;text-align:center;margin-top:12px}
+
+.login-form{max-width:380px;margin:0 auto;background:transparent;padding:0;border-radius:12px;display:flex;flex-direction:column;gap:10px;color:#e6e6e6}
+.login-form .field{display:flex;flex-direction:column;gap:6px}
+.login-form label{font-size:13px;color:#cfd8dc}
+.login-form input{padding:12px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.03);color:#fff}
+.login-form input:focus{outline:0;box-shadow:0 6px 18px rgba(29,185,84,.12);border-color:rgba(29,185,84,.9)}
+.login-form .row.between{display:flex;justify-content:space-between;align-items:center;font-size:13px}
+.login-form .remember input{margin-right:8px;transform:translateY(1px)}
+.login-form .forgot{color:#cfd8dc;text-decoration:none}
+.login-form .primary{margin-top:6px;padding:12px;border-radius:10px;border:none;background:#1db954;color:#fff;font-weight:700;cursor:pointer}
+.login-form .or{text-align:center;color:#bdbdbd;padding:6px 0}
+.socials{display:flex;gap:8px;flex-direction:column}
+.social{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,.06);background:rgba(255,255,255,.03);color:#fff;cursor:pointer}
+.social.google{background:linear-gradient(90deg,#fff,#f2f2f2);color:#222}
+.social.apple{background:rgba(0,0,0,.8)}
+.signup{text-align:center;color:#d0d0d0;padding:12px 0 6px}
+
+/* small tweaks */
+.bottom{padding:8px 10px}
+
+@keyframes cardIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* Responsive rules */
+@media (max-width:900px){
+  nav ul{padding:12px}
+  .brand img{width:130px;height:50px}
+  .songlist{width:100%}
+  .timestamp{padding-left:20px}
+  .navlink{gap:14px}
+  .login-card{padding:18px}
+}
+
+@media (max-width:480px){
+  nav ul{flex-wrap:wrap;padding:10px}
+  .navlink{width:100%;justify-content:flex-end;padding-top:8px;gap:12px}
+  .brand img{width:110px;height:44px}
+  .container{width:96%;padding:12px}
+  h1{font-size:18px}
+  .songItem{height:56px;padding:6px}
+  .timestamp{padding-left:10px;font-size:11px}
+  .icon i{font-size:24px;margin:10px 6px}
+  .login-form{margin:14px}
+  .login-page{padding:20px;min-height:calc(100vh - 100px)}
+}
+
+/* About page styles */
+.about-section{max-width:1000px;margin:28px auto;padding:26px;background:rgba(0,0,0,0.45);border-radius:14px}
+.about-hero{text-align:center;margin-bottom:20px}
+.about-hero h1{font-size:28px;margin-bottom:6px;color:#fff}
+.about-hero .lead{color:#d7dfe2}
+.about-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:10px}
+.card{background:rgba(255,255,255,0.03);padding:16px;border-radius:10px}
+.card h3{margin-bottom:8px;color:#e6f7ea}
+.about-contact{margin-top:18px;padding:12px;background:rgba(255,255,255,0.02);border-radius:10px}
+
+@media (max-width:900px){
+  .about-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:480px){
+  .about-grid{grid-template-columns:1fr}
+  .about-section{padding:16px;margin:14px}
+  .about-hero h1{font-size:20px}
+}
+

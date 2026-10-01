@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="brand">
+      <ul>
+        <li><a href="index.html"><img src="https://i.pinimg.com/564x/e0/0a/51/e00a51aa099c1aa4794d01da097846ff.jpg" alt="Logo"></a></li>
+        <div class="navlink">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="playlist.html">PLAYLIST</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </div>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <div class="login-page">
+      <div class="login-card">
+        <div class="login-header">
+          <img src="https://i.pinimg.com/564x/e0/0a/51/e00a51aa099c1aa4794d01da097846ff.jpg" alt="logo" class="login-logo">
+          <h2>Welcome back</h2>
+          <p class="muted">Sign in to continue to your music</p>
+        </div>
+        <form id="loginForm" class="login-form">
+          <div class="field">
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text" placeholder="your username" required />
+          </div>
+          <div class="field">
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password" placeholder="••••••••" required />
+          </div>
+          <div class="row between">
+            <label class="remember"><input type="checkbox" /> Remember me</label>
+            <a class="forgot" href="#">Forgot?</a>
+          </div>
+          <button class="primary" type="submit">Sign In</button>
+          <div class="or"><span>or</span></div>
+          <div class="socials">
+            <button type="button" class="social google">Continue with Google</button>
+            <button type="button" class="social apple">Continue with Apple</button>
+          </div>
+        </form>
+        <p class="signup">Don't have an account? <a href="#">Sign up</a></p>
+      </div>
+    </div>
+
+    <p class="small">This is a demo login form (no backend). Return to <a href="index.html">home</a>.</p>
+
+    <script>
+      document.getElementById('loginForm').addEventListener('submit', function(e){
+        e.preventDefault();
+        const u = document.getElementById('username').value.trim();
+        if(!u){ alert('Enter username'); return; }
+        alert('Hello ' + u + '! (demo login — no server)');
+        window.location.href = 'index.html';
+      });
+    </script>
+  </main>
+</body>
+</html>

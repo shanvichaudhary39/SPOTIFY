@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4618389343726417"
+     crossorigin="anonymous"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Playlist</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <div class="brand">
+      <ul>
+        <li><a href="index.html"><img src="https://i.pinimg.com/564x/e0/0a/51/e00a51aa099c1aa4794d01da097846ff.jpg" alt="Logo"></a></li>
+        <div class="navlink">
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="playlist.html">PLAYLIST</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </div>
+      </ul>
+    </div>
+  </nav>
+  <main>
+    <h1>Your Playlist</h1>
+    <p>Click play on any track below to stream the local file.</p>
+    <ul class="playlist-list">
+      <li><strong>PRINCESS DON'T CRY</strong>
+        <audio controls preload="none">
+          <source src="1.mp3" type="audio/mpeg">Your browser does not support audio.
+        </audio>
+      </li>
+      <li><strong>AURORA RUNAWAY</strong>
+        <audio controls preload="none">
+          <source src="2.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li><strong>STAY</strong>
+        <audio controls preload="none">
+          <source src="3.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li><strong>IMAGINE DRAGON</strong>
+        <audio controls preload="none">
+          <source src="4.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li><strong>GLASS ANIMAL</strong>
+        <audio controls preload="none">
+          <source src="5.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li><strong>LOVELY</strong>
+        <audio controls preload="none">
+          <source src="6.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li><strong>LET ME DOWN SLOWLY</strong>
+        <audio controls preload="none">
+          <source src="7.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li><strong>SHAPE OF YOU</strong>
+        <audio controls preload="none">
+          <source src="8.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li><strong>UNIVERSE</strong>
+        <audio controls preload="none">
+          <source src="9.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+      <li><strong>ON THE WAY</strong>
+        <audio controls preload="none">
+          <source src="10.mp3" type="audio/mpeg">
+        </audio>
+      </li>
+     
+    </ul>
+    <p class="small">Return to <a href="index.html">home</a>.</p>
+  </main>
+  <script>
+    // Pause any other <audio> when one starts playing so only one track plays at a time
+    (function(){
+      const audios = Array.from(document.querySelectorAll('audio'));
+      audios.forEach(a => {
+        a.addEventListener('play', () => {
+          audios.forEach(other => {
+            if (other !== a && !other.paused) other.pause();
+          });
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
